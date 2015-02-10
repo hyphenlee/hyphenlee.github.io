@@ -1,3 +1,10 @@
 #+TITLE: Index
+欢迎来到我的博客，要看最近文章的请点击blog。
 
-This is the home page of hyphen.
+主页上列出我最近在忙的事情，以及阅读列表。
+* 计划任务
+** TODO 写完年终总结
+- State "TODO"       from ""           [2015-02-10 Tue 22:39]
+* 阅读列表
+** TODO 哈利波特英文版第三册
+- State "TODO"       from ""           [2015-02-10 Tue 22:41]
