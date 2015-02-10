@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>org-page</title>
+    <link>https://hyphenlee.github.io</link>
+    <description>static site generator</description>
+    <pubDate>Tue, 10 Feb 2015 19:29:43 China Standard Time</pubDate>
+    <lastBuildDate>Tue, 10 Feb 2015 19:29:43 China Standard Time</lastBuildDate>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>First Post</title>
+      <link>https://hyphenlee.github.io/blog/2015/02/10/first-post</link>
+      <description>first post of my github page by org-page</description>
+      <pubDate>2015-02-10</pubDate>
+      <guid>https://hyphenlee.github.io/blog/2015/02/10/first-post</guid>
+    </item>
+  </channel>
+</rss>
