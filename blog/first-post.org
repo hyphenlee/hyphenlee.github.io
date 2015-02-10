@@ -1,0 +1,14 @@
+#+TITLE:       First Post
+#+AUTHOR:      hyphen
+#+EMAIL:       lhfcjhyy@gmail.com
+#+DATE:        2015-02-10 Tue
+#+URI:         /blog/%y/%m/%d/first-post
+#+KEYWORDS:    Other
+#+TAGS:        Other
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: first post of my github page by org-page
+* 博客说明
+之前博客一直用octopress发布，但是因为工作在windows下，octopress不是很友好，而且发布比较麻烦，一直用的不顺心，
+现在发现了org-page这个工具，感觉还不错，依赖的东西不是很多，用起来还算方便，不过也折腾了好一会，之前是调用op/do-publication出错，
+调试了一下org-page的代码才知道，写好博客后要先用git commit 一下，org-page才能识别。
