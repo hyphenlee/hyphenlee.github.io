@@ -4,23 +4,23 @@
     <title>Let it be</title>
     <link>https://hyphenlee.github.io</link>
     <description>Don&#39;t leave this world without anything left.</description>
-    <pubDate>Wed, 11 Feb 2015 13:27:45 China Standard Time</pubDate>
-    <lastBuildDate>Wed, 11 Feb 2015 13:27:45 China Standard Time</lastBuildDate>
+    <pubDate>Wed, 11 Feb 2015 14:12:09 China Standard Time</pubDate>
+    <lastBuildDate>Wed, 11 Feb 2015 14:12:09 China Standard Time</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>博客说明</title>
+      <link>https://hyphenlee.github.io/blog/2015/02/10/博客终结</link>
+      <description>关于博客</description>
+      <pubDate>2015-02-11</pubDate>
+      <guid>https://hyphenlee.github.io/blog/2015/02/10/博客终结</guid>
+    </item>
     <item>
       <title>First Post</title>
       <link>https://hyphenlee.github.io/blog/2015/02/10/first-post</link>
       <description>first post of my github page by org-page</description>
       <pubDate>2015-02-10</pubDate>
       <guid>https://hyphenlee.github.io/blog/2015/02/10/first-post</guid>
-    </item>
-    <item>
-      <title>博客终结</title>
-      <link>https://hyphenlee.github.io/blog/2015/02/10/博客终结</link>
-      <description>关于博客</description>
-      <pubDate>2015-02-10</pubDate>
-      <guid>https://hyphenlee.github.io/blog/2015/02/10/博客终结</guid>
     </item>
   </channel>
 </rss>
