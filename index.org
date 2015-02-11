@@ -5,6 +5,8 @@
 * 计划任务
 ** TODO 写完年终总结
 - State "TODO"       from ""           [2015-02-10 Tue 22:39]
+** TODO 放假
+- State "TODO"       from ""           [2015-02-11 Wed 12:21]
 * 阅读列表
 ** TODO 哈利波特英文版第三册
 - State "TODO"       from ""           [2015-02-10 Tue 22:41]
