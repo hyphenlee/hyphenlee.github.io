@@ -1,4 +1,4 @@
-#+TITLE:       博客终结
+#+TITLE:       博客说明
 #+AUTHOR:      hyphen
 #+EMAIL:       lhfcjhyy@gmail.com
 #+DATE:        2015-02-10 Tue
