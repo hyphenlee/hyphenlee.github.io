@@ -5,9 +5,12 @@
 
 
 * 计划任务
-** TODO 写完年终总结
+** DONE 写完年终总结
+- State "DONE"       from "TODO"       [2015-02-21 Sat 21:45] \\
+  finished
 - State "TODO"       from ""           [2015-02-10 Tue 22:39]
-** TODO 放假
+** DONE 放假
+- State "DONE"       from "TODO"       [2015-02-21 Sat 21:45]
 - State "TODO"       from ""           [2015-02-11 Wed 12:21]
 * 阅读列表
 ** TODO 哈利波特三
