@@ -1,0 +1,13 @@
+#+TITLE:       《C++ API设计》笔记
+#+AUTHOR:      hyphen
+#+EMAIL:       lhfcjhyy@gmail.com
+#+DATE:        2015-02-26 Thu
+#+URI:         /blog/%y/%m/%d/《c++-api设计》笔记
+#+KEYWORDS:    C++
+#+TAGS:        programming,c++
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: 笔记
+
+* 第一章 概述
+ 设计 
