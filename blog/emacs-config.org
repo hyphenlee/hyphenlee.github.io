@@ -28,6 +28,7 @@ git clone  --recursive https://github.com/Andersbakken/rtags.git
 brew search llvm
 #+END_SRC
 找到brew库中最新的llvm版本:我的版本是llvm35,
+ 
 
 ** 安装：
 #+BEGIN_SRC shell
