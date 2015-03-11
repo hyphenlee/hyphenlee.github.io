@@ -16,36 +16,37 @@
 emacs相对于IDE最大的缺点是项目管理和基于语义的文件跳转和自动补全(调试什么的仁者见仁，有些人根本就不用调试器)，而最影响实际体验的莫过于后两项，对于文件跳转，之前只有像cscope,但是这些基于ctags或者gtags的文件跳转很不给力，遇到一些像Update()之类的这种通用函数，你想跳转过去是会死人的，之前也有cedet这样基于语义的项目但是很久没有维护了，版本老旧且安装麻烦，反正我就一直没搞顺手过，而且对于大项目的效率也是很低的，；对于自动补全也是，之前也基本只能找到基于文本的补全，用过后来找到了auto-complete-clang，基本可以用，但是大项目的效率还是太低了，一直带着这样的怨念和遗憾，我一直只是把emacs作为一个普通的文本编辑器在windows下用于改改配置文件，写cmake,org等文档，用dired管理文件，或者作为终端使用(作为终端在windows下有个郁闷的问题一直没解决的就是命令行有些命令无法回显，想mysql这些要输入密码的命令都无法使用)。
 
      但是经过这么长时间的探索，问题终于解决了，我终于找到好用的工具作为C++的开发环境，关键的插件就是：Rtags和emacs-clang-complete-async,两个插件都是基于clang解析文件的，前一个是用于文件跳转的，后一个是自动补全，两个都是异步的调用线程所以不会有卡顿现象，配置文件主要是对于mac的，我只有windows和mac两个系统，linux没有任何的测试，理论上linux下是可行的。
-
+ 
 * 下面说说两个插件的安装：
 
 rtags:https://github.com/Andersbakken/rtags
-
+#+BEGIN_SRC shell
 git clone  --recursive https://github.com/Andersbakken/rtags.git
-
+#+END_SRC
 ** 安装llvm:
-
+#+BEGIN_SRC shell
 brew search llvm
-
+#+END_SRC
 找到brew库中最新的llvm版本:我的版本是llvm35,
 
 ** 安装：
-
+#+BEGIN_SRC shell
 brew install llvm35 --with-clang --with-libcxx --rtti
-
+#+END_SRC
 然后cd到rtags的根目录：
-
+#+BEGIN_SRC shell
 cmake .
 make
+#+END_SRC
 这样就在rtags/bin下生成了rtags的可执行文件，主要是rdm 和rc
 下面是为了设置环境变量：
-
-export PATH=/path/to/rtags/src:~/bin/:$PATH  
+#+BEGIN_SRC shell
+export PATH=/path/to/rtags/src:~/bin/:$PATH   
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/c++  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/cc  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/g++  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/gcc  
-
+#+END_SRC
 注意rtags的目录必须在path的前面，
 使用which -a gcc 后腰能显示两个gcc 的命令，~/bin/gcc要在前面，
 在makefile或者命令行里使用gcc或者其他命令时，
@@ -90,7 +91,8 @@ git clone https://github.com/Golevka/emacs-clang-complete-async.git
 $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-3.5/lib
 后面的具体路径根据相应的情况更改，可以用llvm-config --libdir查看。
 设置好后在emacs中配置：
-#BEGIN_SRC emacs-lisp
+
+#+BEGIN_SRC emacs-lisp
       (wttr/plugin:prepend-to-load-path "clang-async")
       (require 'auto-complete-clang-async)
       (defun ac-cc-mode-setup ()
@@ -103,7 +105,7 @@ $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-3.5
         (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
         (add-hook 'auto-complete-mode-hook 'ac-common-setup)
         (global-auto-complete-mode t))
-#END_SRC
+#+END_SRC
 这样在auto-complete的后选中就有clang提供的补全了
 
 ** 关于我的配置文件：
