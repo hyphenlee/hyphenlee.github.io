@@ -8,6 +8,10 @@
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: emacs for c++
+* first things first
+这是我的emacs配置
+[[https://github.com/hyphenlee/emacs.d][emacs configuration]]
+
 * 缘起
 用了emacs已有两年多，我工作的环境是vs2012,使用了vsvim和vassistx,算是比较完美是使用方式，集成了IDE和编辑器各自的优势， 
 
@@ -16,6 +20,7 @@
 emacs相对于IDE最大的缺点是项目管理和基于语义的文件跳转和自动补全(调试什么的仁者见仁，有些人根本就不用调试器)，而最影响实际体验的莫过于后两项，对于文件跳转，之前只有像cscope,但是这些基于ctags或者gtags的文件跳转很不给力，遇到一些像Update()之类的这种通用函数，你想跳转过去是会死人的，之前也有cedet这样基于语义的项目但是很久没有维护了，版本老旧且安装麻烦，反正我就一直没搞顺手过，而且对于大项目的效率也是很低的，；对于自动补全也是，之前也基本只能找到基于文本的补全，用过后来找到了auto-complete-clang，基本可以用，但是大项目的效率还是太低了，一直带着这样的怨念和遗憾，我一直只是把emacs作为一个普通的文本编辑器在windows下用于改改配置文件，写cmake,org等文档，用dired管理文件，或者作为终端使用(作为终端在windows下有个郁闷的问题一直没解决的就是命令行有些命令无法回显，想mysql这些要输入密码的命令都无法使用)。
 
      但是经过这么长时间的探索，问题终于解决了，我终于找到好用的工具作为C++的开发环境，关键的插件就是：Rtags和emacs-clang-complete-async,两个插件都是基于clang解析文件的，前一个是用于文件跳转的，后一个是自动补全，两个都是异步的调用线程所以不会有卡顿现象，配置文件主要是对于mac的，我只有windows和mac两个系统，linux没有任何的测试，理论上linux下是可行的。
+
  
 * 下面说说两个插件的安装：
 
