@@ -57,19 +57,20 @@ emacs相对于IDE最大的缺点是项目管理和基于语义的文件跳转和
 <p>
 rtags:<a href="https://github.com/Andersbakken/rtags">https://github.com/Andersbakken/rtags</a>
 </p>
+<div class="org-src-container">
 
-<p>
-git clone  --recursive <a href="https://github.com/Andersbakken/rtags.git">https://github.com/Andersbakken/rtags.git</a>
-</p>
+<pre class="src src-shell">git clone  --recursive https://github.com/Andersbakken/rtags.git
+</pre>
 </div>
-
+</div>
 <div id="outline-container-sec-2-1" class="outline-3">
 <h3 id="sec-2-1">安装llvm:</h3>
 <div class="outline-text-3" id="text-2-1">
-<p>
-brew search llvm
-</p>
+<div class="org-src-container">
 
+<pre class="src src-shell">brew search llvm
+</pre>
+</div>
 <p>
 找到brew库中最新的llvm版本:我的版本是llvm35,
 </p>
@@ -78,29 +79,33 @@ brew search llvm
 <div id="outline-container-sec-2-2" class="outline-3">
 <h3 id="sec-2-2">安装：</h3>
 <div class="outline-text-3" id="text-2-2">
-<p>
-brew install llvm35 --with-clang --with-libcxx --rtti
-</p>
+<div class="org-src-container">
 
+<pre class="src src-shell">brew install llvm35 --with-clang --with-libcxx --rtti
+</pre>
+</div>
 <p>
 然后cd到rtags的根目录：
 </p>
+<div class="org-src-container">
 
-<p>
-cmake .
+<pre class="src src-shell">cmake .
 make
+</pre>
+</div>
+<p>
 这样就在rtags/bin下生成了rtags的可执行文件，主要是rdm 和rc
 下面是为了设置环境变量：
 </p>
+<div class="org-src-container">
 
-<p>
-export PATH=/path/to/rtags/src:~/bin/:$PATH  
+<pre class="src src-shell">export PATH=/path/to/rtags/src:~/bin/:$PATH   
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/c++  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/cc  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/g++  
-ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/gcc  
-</p>
-
+ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/gcc
+</pre>
+</div>
 <p>
 注意rtags的目录必须在path的前面，
 使用which -a gcc 后腰能显示两个gcc 的命令，~/bin/gcc要在前面，
@@ -161,8 +166,11 @@ git clone <a href="https://github.com/Golevka/emacs-clang-complete-async.git">ht
 $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-3.5/lib
 后面的具体路径根据相应的情况更改，可以用llvm-config --libdir查看。
 设置好后在emacs中配置：
-#BEGIN_SRC emacs-lisp
-      (wttr/plugin:prepend-to-load-path "clang-async")
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">      (wttr/plugin:prepend-to-load-path "clang-async")
       (require 'auto-complete-clang-async)
       (defun ac-cc-mode-setup ()
         (interactive)
@@ -174,7 +182,9 @@ $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-
         (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
         (add-hook 'auto-complete-mode-hook 'ac-common-setup)
         (global-auto-complete-mode t))
-#END_SRC
+</pre>
+</div>
+<p>
 这样在auto-complete的后选中就有clang提供的补全了
 </p>
 </div>
