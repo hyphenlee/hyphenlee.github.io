@@ -1,14 +1,14 @@
-#+TITLE:       ¡¶C++ APIÉè¼Æ¡·±Ê¼Ç
+#+TITLE:       ã€ŠC++ APIè®¾è®¡ã€‹ç¬”è®°
 #+AUTHOR:      hyphen
 #+EMAIL:       lhfcjhyy@gmail.com
 #+DATE:        2015-02-26 Thu
-#+URI:         /blog/%y/%m/%d/¡¶c++-apiÉè¼Æ¡·±Ê¼Ç
+#+URI:         /blog/%y/%m/%d/ã€Šc++-apiè®¾è®¡ã€‹ç¬”è®°
 #+KEYWORDS:    C++
 #+TAGS:        programming,c++
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: ±Ê¼Ç
+#+DESCRIPTION: ç¬”è®°
 
-* µÚÒ»ÕÂ ¸ÅÊö
-  Éè¼Æ
+* ç¬¬ä¸€ç«  æ¦‚è¿°
+  è®¾è®¡
 *
