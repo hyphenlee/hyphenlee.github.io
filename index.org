@@ -15,7 +15,7 @@
 ** DONE 换工作
 - State "DONE"       from "TODO"       [2015-04-07 Tue 22:24]
 - State "TODO"       from ""           [2015-03-28 Sat 22:33]
-** WORKING 学ios开发
+** WORKING 看完ios8开发公开课
 - State "WORKING"    from "TODO"       [2015-04-07 Tue 22:57]
 - State "TODO"       from ""           [2015-04-07 Tue 22:57]
 * 阅读列表
@@ -26,5 +26,7 @@
 ** WORKING sicp
 - State "WORKING"    from "DONE"       [2015-04-07 Tue 22:54]
 - State "TODO"       from ""           [2015-03-28 Sat 22:32]
+** WORKING 哈利波特四
+- State "TODO"       from ""           [2015-05-03 Sun 10:13]
 ** TODO c++ api 设计
 - State "TODO"       from ""           [2015-03-28 Sat 22:33]
