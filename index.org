@@ -1,5 +1,5 @@
 #+TITLE: Index
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:     H:3 num:nil toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
 欢迎来到我的博客，要看最近文章的请点击blog。
 主页上列出我最近在忙的事情，以及阅读列表。
 
@@ -28,5 +28,5 @@
 - State "TODO"       from ""           [2015-03-28 Sat 22:32]
 ** WORKING 哈利波特四
 - State "TODO"       from ""           [2015-05-03 Sun 10:13]
-** TODO c++ api 设计
-- State "TODO"       from ""           [2015-03-28 Sat 22:33]
+** TODO 百年孤独
+- State "TODO"       from ""           [2015-06-22 Mon 22:21]

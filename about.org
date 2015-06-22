@@ -1,14 +1,12 @@
 #+TITLE: About
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:     H:3 num:nil toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
 * About hyphen
 
 ** 技术
 1. 大学主要用C#
-2. 开发医疗软件的程序员，毕业后主要开发C++程序.熟悉Dicom,医学图像处理
-3. 用javascript做过html5放疗应用
-4. 用javascript的sencha架构开发过可移植的手机端放疗软件
-5. 喜欢emacs，喜欢elisp
-6. 目前做linux下得c++开发
+2. 开发医疗软件的程序员，毕业后开发了两年肿瘤放疗程序.熟悉Dicom,医学图像处理
+3. 喜欢emacs，喜欢elisp
+4. 目前做linux下得c++开发
 ** 爱好
 *** 乐器
 大学玩过几年的蓝调口琴，大学毕业后开始玩吉他
@@ -19,5 +17,5 @@
 *** 阅读
 喜欢余华的小说，喜欢《三体》，喜欢《哈利波特》
 * 联系方式
-email: lhfcjhyy[at]gmail.com
+email: lhfcjhyy@gmail.com
 
