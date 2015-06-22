@@ -25,41 +25,41 @@ emacs相对于IDE最大的缺点是项目管理和基于语义的文件跳转和
 * 下面说说两个插件的安装：
 
 rtags:https://github.com/Andersbakken/rtags
-#+BEGIN_SRC shell
+
 git clone  --recursive https://github.com/Andersbakken/rtags.git
-#+END_SRC
+
 ** 安装llvm:
-#+BEGIN_SRC shell
+
 brew search llvm
-#+END_SRC
+
 找到brew库中最新的llvm版本:我的版本是llvm35,
  
 
 ** 安装：
-#+BEGIN_SRC shell
+
 brew install llvm35 --with-clang --with-libcxx --rtti
-#+END_SRC
+
 然后cd到rtags的根目录：
-#+BEGIN_SRC shell
+
 cmake .
 make
-#+END_SRC
+
 这样就在rtags/bin下生成了rtags的可执行文件，主要是rdm 和rc
 下面是为了设置环境变量：
-#+BEGIN_SRC shell
+
 export PATH=/path/to/rtags/src:~/bin/:$PATH   
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/c++  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/cc  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/g++  
 ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/gcc  
-#+END_SRC
+
 注意rtags的目录必须在path的前面，
 使用which -a gcc 后腰能显示两个gcc 的命令，~/bin/gcc要在前面，
 在makefile或者命令行里使用gcc或者其他命令时，
 系统会调用path中的第一个gcc命令，然后gcc_rtags_wrapper.sh就会调用后面的系统原本的gcc命令。
 这样rtags就装好了，用的时候要打开rdm的后台程序，但是一般都是用emacs的elisp文件，所以不需要自己手动输入命令行.
 下面是我的配置：
-#+BEGIN_SRC emacs-lisp
+
 (wttr/plugin:prepend-to-load-path "rtags/src/")
 (global-unset-key (kbd "M-g M-g"))
 (global-set-key (kbd "M-g M-g") 'rtags-find-symbol-at-point)
@@ -79,7 +79,7 @@ ln -s /path/to/rtags/gcc-rtags-wrapper.sh ~/bin/gcc
 (add-hook 'c-mode-common-hook 'cc-hook-func)
 
 (require 'rtags)
-#+END_SRC
+
 
 这样配置后，emacs会在打开c/c++文件的时候自动开启rdm的后台程序，一般只要按f5编译一遍rtags应该就可以起作用了，M-g M-g转到定义，M-g-r查找所有引用，M-g f/b 在栈中前后跳转
 M-g o 在cpp/h 中切换。
@@ -98,7 +98,7 @@ $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-
 后面的具体路径根据相应的情况更改，可以用llvm-config --libdir查看。
 设置好后在emacs中配置：
 
-#+BEGIN_SRC emacs-lisp
+
       (wttr/plugin:prepend-to-load-path "clang-async")
       (require 'auto-complete-clang-async)
       (defun ac-cc-mode-setup ()
@@ -111,7 +111,7 @@ $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-
         (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
         (add-hook 'auto-complete-mode-hook 'ac-common-setup)
         (global-auto-complete-mode t))
-#+END_SRC
+
 这样在auto-complete的后选中就有clang提供的补全了
 
 ** 关于我的配置文件：
@@ -123,4 +123,3 @@ $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-
 **** wttr-font.el是字体，wttr-color-theme.el设置主题背景，wttr-key.el是按键设置，非插件相关的按键绑定都在这里，wttr-mode-line.el就是emacs最下面的那条信息栏的显示，这个文件写的很好,包括了nyan-mode彩虹条，文件编码，等都很实用。
 **** wttr-utils.el是作者自己写的一些函数，包括系统类型判断，加载路径到load-path,都很实用。
 **** wttr-modes.el是插件加载选择的文件，原始版本是记载.emacs.d/wttr-config/modes/文件夹下按插件的名称创建响应的配置文件，然后在wttr-modes.el加载扫描到的modes/中所有配置文件，我把它改成了根据不同的系统加载我需要的插件。
- 
