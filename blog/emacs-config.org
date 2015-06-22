@@ -6,9 +6,9 @@
 #+KEYWORDS:    emacs
 #+TAGS:        emacs
 #+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: emacs for c++
-* first things first
+* first things first 
 这是我的emacs配置
 [[https://github.com/hyphenlee/emacs.d][emacs configuration]]
 
