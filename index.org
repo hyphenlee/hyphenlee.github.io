@@ -5,28 +5,15 @@
 
 
 * 计划任务
-** DONE 写完年终总结
-- State "DONE"       from "TODO"       [2015-02-21 Sat 21:45] \\
-  finished
-- State "TODO"       from ""           [2015-02-10 Tue 22:39]
-** DONE 放假
-- State "DONE"       from "TODO"       [2015-02-21 Sat 21:45]
-- State "TODO"       from ""           [2015-02-11 Wed 12:21]
-** DONE 换工作
-- State "DONE"       from "TODO"       [2015-04-07 Tue 22:24]
-- State "TODO"       from ""           [2015-03-28 Sat 22:33]
-** WORKING 看完ios8开发公开课
-- State "WORKING"    from "TODO"       [2015-04-07 Tue 22:57]
-- State "TODO"       from ""           [2015-04-07 Tue 22:57]
+** WORKING 看完幸福公开课
+- State "WORKING"    from ""           [2015-06-30 Tue 22:59]
 * 阅读列表
 ** DONE 哈利波特三
 - State "DONE"       from "TODO"       [2015-04-07 Tue 22:25] \\
   换工作期间的空闲时间都花在这上面
 - State "TODO"       from ""           [2015-02-10 Tue 22:41]
-** WORKING sicp
-- State "WORKING"    from "DONE"       [2015-04-07 Tue 22:54]
-- State "TODO"       from ""           [2015-03-28 Sat 22:32]
 ** WORKING 哈利波特四
 - State "TODO"       from ""           [2015-05-03 Sun 10:13]
-** TODO 百年孤独
+** WORKING 百年孤独
+- State "WORKING"    from "TODO"       [2015-06-30 Tue 22:59]
 - State "TODO"       from ""           [2015-06-22 Mon 22:21]
