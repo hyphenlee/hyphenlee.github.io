@@ -1,11 +1,12 @@
 #+TITLE: Index
 #+OPTIONS:     H:3 num:nil toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
 欢迎来到我的博客，要看最近文章的请点击blog。
-主页上列出我最近在忙的事情，以及阅读列表。
+下面列出我最近在忙的事情，以及阅读列表。
 
 
 * 计划任务
 ** WORKING 看完幸福公开课
+- State "WORKING"    from "WORKING"    [2015-06-30 Tue 23:05]
 - State "WORKING"    from ""           [2015-06-30 Tue 22:59]
 * 阅读列表
 ** DONE 哈利波特三
@@ -15,5 +16,7 @@
 ** WORKING 哈利波特四
 - State "TODO"       from ""           [2015-05-03 Sun 10:13]
 ** WORKING 百年孤独
+- State "WORKING"    from "WORKING"    [2015-06-30 Tue 23:04]
 - State "WORKING"    from "TODO"       [2015-06-30 Tue 22:59]
 - State "TODO"       from ""           [2015-06-22 Mon 22:21]
+
