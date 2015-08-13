@@ -13,10 +13,12 @@
 - State "DONE"       from "TODO"       [2015-04-07 Tue 22:25] \\
   换工作期间的空闲时间都花在这上面
 - State "TODO"       from ""           [2015-02-10 Tue 22:41]
-** WORKING 哈利波特四
-- State "TODO"       from ""           [2015-05-03 Sun 10:13]
-** WORKING 百年孤独
+** DONE 百年孤独
+- State "DONE"       from "WORKING"    [2015-08-13 Thu 23:24] \\
+  终于看完了
 - State "WORKING"    from "WORKING"    [2015-06-30 Tue 23:04]
 - State "WORKING"    from "TODO"       [2015-06-30 Tue 22:59]
 - State "TODO"       from ""           [2015-06-22 Mon 22:21]
+** WORKING 哈利波特四
+- State "TODO"       from ""           [2015-05-03 Sun 10:13]
 
