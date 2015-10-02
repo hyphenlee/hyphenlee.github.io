@@ -5,9 +5,15 @@
 
 
 * 计划任务
-** WORKING 看完幸福公开课
+** DONE 看完幸福公开课
+- State "DONE"       from "WORKING"    [2015-10-02 Fri 18:06] \\
+  拖了这么长时间，总算看完了，收货还是很多的，自己开始认真写日记、做计划
+  了，更加坚信运动、冥想、睡眠的作用，对生活有更加积极的态度，不再过于完美
+  主义，不会轻易放弃
 - State "WORKING"    from "WORKING"    [2015-06-30 Tue 23:05]
 - State "WORKING"    from ""           [2015-06-30 Tue 22:59]
+** WORKING 完成ios项目开发
+- State "WORKING"    from              [2015-10-02 Fri 18:08]
 * 阅读列表
 ** DONE 哈利波特三
 - State "DONE"       from "TODO"       [2015-04-07 Tue 22:25] \\
