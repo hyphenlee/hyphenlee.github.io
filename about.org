@@ -1,4 +1,4 @@
-#+TITLE: About
+#+TITLE: 
 #+OPTIONS:     H:3 num:nil toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
 * About hyphen
 
