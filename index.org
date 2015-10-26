@@ -12,7 +12,9 @@
   主义，不会轻易放弃
 - State "WORKING"    from "WORKING"    [2015-06-30 Tue 23:05]
 - State "WORKING"    from ""           [2015-06-30 Tue 22:59]
-** WORKING 完成ios项目开发
+** ABORT 完成ios项目开发
+- State "ABORT"      from "WORKING"    [2015-10-26 Mon 16:52] \\
+  进度太慢，决定还是放弃
 - State "WORKING"    from              [2015-10-02 Fri 18:08]
 * 阅读列表
 ** DONE 哈利波特三
@@ -26,5 +28,6 @@
 - State "WORKING"    from "TODO"       [2015-06-30 Tue 22:59]
 - State "TODO"       from ""           [2015-06-22 Mon 22:21]
 ** WORKING 哈利波特四
+- State "WORKING"    from "WORKING"    [2015-10-26 Mon 16:53]
 - State "TODO"       from ""           [2015-05-03 Sun 10:13]
 
