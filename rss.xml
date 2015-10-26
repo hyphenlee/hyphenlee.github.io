@@ -4,49 +4,56 @@
     <title>Let it be</title>
     <link>https://hyphenlee.github.io</link>
     <description>Don&#39;t leave this world without anything left.</description>
-    <pubDate>Thu, 13 Aug 2015 23:27:18 CST</pubDate>
-    <lastBuildDate>Thu, 13 Aug 2015 23:27:18 CST</lastBuildDate>
+    <pubDate>Mon, 26 Oct 2015 17:19:55 中国标准时间</pubDate>
+    <lastBuildDate>Mon, 26 Oct 2015 17:19:55 中国标准时间</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
+      <title>博客备份</title>
+      <link>https://hyphenlee.github.io/blog/2015/10/26/博客备份</link>
+      <description><![CDATA[以前的博客]]></description>
+      <pubDate>2015-10-26</pubDate>
+      <guid>https://hyphenlee.github.io/blog/2015/10/26/博客备份</guid>
+    </item>
+    <item>
       <title>Emacs configure for c++</title>
       <link>https://hyphenlee.github.io/blog/2015/03/11/emacs-configure-for-c++</link>
-      <description>emacs for c++</description>
+      <description><![CDATA[emacs for c++]]></description>
       <pubDate>2015-06-22</pubDate>
       <guid>https://hyphenlee.github.io/blog/2015/03/11/emacs-configure-for-c++</guid>
     </item>
     <item>
       <title>《C++ API设计》笔记</title>
       <link>https://hyphenlee.github.io/blog/2015/02/26/《c++-api设计》笔记</link>
-      <description>笔记</description>
+      <description><![CDATA[笔记]]></description>
       <pubDate>2015-04-07</pubDate>
       <guid>https://hyphenlee.github.io/blog/2015/02/26/《c++-api设计》笔记</guid>
     </item>
     <item>
       <title>《sicp》笔记</title>
       <link>https://hyphenlee.github.io/blog/2015/04/07/《sicp》笔记</link>
-      <description>笔记</description>
+      <description><![CDATA[笔记]]></description>
       <pubDate>2015-04-07</pubDate>
       <guid>https://hyphenlee.github.io/blog/2015/04/07/《sicp》笔记</guid>
     </item>
     <item>
       <title>First Post</title>
       <link>https://hyphenlee.github.io/blog/2015/02/10/first-post</link>
-      <description>first post of my github page by org-page</description>
+      <description><![CDATA[first post of my github page by org-page]]></description>
       <pubDate>2015-03-28</pubDate>
       <guid>https://hyphenlee.github.io/blog/2015/02/10/first-post</guid>
     </item>
     <item>
       <title>博客说明</title>
       <link>https://hyphenlee.github.io/blog/2015/02/10/博客终结</link>
-      <description>关于博客</description>
+      <description><![CDATA[关于博客]]></description>
       <pubDate>2015-03-28</pubDate>
       <guid>https://hyphenlee.github.io/blog/2015/02/10/博客终结</guid>
     </item>
     <item>
       <title>summary of 2014</title>
       <link>https://hyphenlee.github.io/blog/2015/02/12/summary-of-2014</link>
-      <description>summary of 2014</description>
+      <description><![CDATA[summary of 2014]]></description>
       <pubDate>2015-03-28</pubDate>
       <guid>https://hyphenlee.github.io/blog/2015/02/12/summary-of-2014</guid>
     </item>
