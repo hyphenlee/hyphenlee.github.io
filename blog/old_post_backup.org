@@ -3,8 +3,8 @@
 #+EMAIL:       lhfcjhyy@gmail.com
 #+DATE:        2015-10-26 Mon
 #+URI:         /blog/%y/%m/%d/博客备份
-#+KEYWORDS:    <TODO: insert your keywords here>
-#+TAGS:        <TODO: insert your tags here>
+#+KEYWORDS:    other
+#+TAGS:        other
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: 以前的博客
