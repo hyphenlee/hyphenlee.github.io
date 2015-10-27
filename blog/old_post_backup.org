@@ -40,7 +40,7 @@
 在知乎上看到一个问题问的是：哪些行为是浪费时间？
 看到其中一条回答：
 
-#+BEGIN_SRC
+#+BEGIN_SRC c
 我的愚见，是等。
 等长大，等放假，等老板同意，等对方喜欢自己，等条件成熟，等下一次机会，等更好的人出现，等公正到来，等待被救援，等某人回心转意，等一个不可能的奇迹。
 不等就是，活在当下。
@@ -263,8 +263,9 @@ for (int i = 0; i < 10000; i++)
 查询代码 ：
 
 以id作为检索条件：
+#+begin_src c
  char *st = "select * from no_key_table where id=%d"; size_t st_len = strlen(st); char *query=new char[st_len + 1024+1]; MYSQL_RES *result = NULL; std::vector uid_list; for (int i = 0; i < 1000; i++) { int len = sprintf_s(query, st_len + 1024+1, st,i+5000); if ( mysql_query(mydata_, query)) { assert(false); } result = mysql_store_result(mydata_); MYSQL_ROW row = NULL; while((row = mysql_fetch_row(result))) { uid_list.push_back(row[1]); } } 以uid作为检索条件： char *st2 = "select * from not_key_tablewhere uid='%s'"; size_t st_lens = strlen(st2); char *querys=new char[st_lens + 1024+1]; MYSQL_RES *results = NULL; for (int i = 0; i < 1000; i++) { int len = sprintf_s(querys, st_lens + 1024+1, st2,uid_list[i].c_str()); if ( mysql_query(mydata_, querys)) {} results = mysql_store_result(mydata_); }
-
+#+end_src 
 三个表的的测试代码基本相同，表名改一下就行，测试计时使用的是断点，在关
 键代码的开始和结尾设置断点，当代码运行到关键代码的开始初中断后，在
 vs2012的监视窗口处添加一个@clk的变量，并将值设为0，然后运行代码到第二
@@ -296,7 +297,7 @@ key. 1. 10000 line data
 
 连接数据库本身没什么难度，按着poco c++官网的教程就能连上， 郁闷的是教程有一些错误，而且和代码版本对不上，我开始用1.4.6就发现好些错误，如插入数据时用按官网用 std::string aName("Peter"); ses << "INSERT INTO FORENAME VALUES(:name)", use(aName), now; 后面整了很长时间都不行,看了测试代码才知道应该用下面的方式: std::string aName("Peter"); ses << "INSERT INTO FORENAME VALUES(?)", use(aName), now; 再换到1.5.2版本时，发现use,now的命名空间都变了，由原来的Poco::Data,变成Poco::Data::Keywords, Poco/Data/common.h文件也消失了。 官网的教程与代码是有很多是不同步的，所以:
 
-#+BEGIN_SRC
+#+BEGIN_SRC c
 “RTFSC – Read The F**king Source Code ☺!” ––Linus Benedict Torvalds
 #+END_SRC
 使用自定义类型插入时，insert语句中的VALUES(?,?,?),问号个数要与模板中的
@@ -304,7 +305,7 @@ key. 1. 10000 line data
 次序相对应。 odbc的配置对于新手也是个问题,windows(windows8 64 位)的32
 位odbc配置管理器在这里:
 
-#+BEGIN_SRC
+#+BEGIN_SRC c
 C:\Windows\SysWOW64\odbcad32.exe
 #+END_SRC
 32位和64位是有区别的，32位只能用32位的驱动，mysql的odbc驱动也要额外安装 连接基本就是这些问题了
@@ -314,5 +315,7 @@ C:\Windows\SysWOW64\odbcad32.exe
 二进制数据读取会比较麻烦，首先数据的大小要有个明确的范围，因为要设在mysql的缓冲区和poco的缓冲区，mysql的缓冲区设置方法为： mysql> set global max_allowed_packet=1000000000; 或者在mysql的配置文件 里改(安装文件根目录的my.ini，没有的话用bin/mysqlinstanceconfig.exe创建)，增加一行：
 
 max_allowed_packet=256M
-程序里则为: Session session("ODBC",DSN); std::size_t maxFldSize=0x0fffffff; //256MB session.setProperty("maxFieldSize",Poco::Any(maxFldSize)); 二进制数据插入、读取方法: BLOB dat_((unsigned char*)buffer,length); std::vector te_bl; session<<"insert into blobtest values(?)" ,use(dat_),now; session<<"select * from blobtest",into(te_bl),now;
+程序里则为:
+
+ Session session("ODBC",DSN); std::size_t maxFldSize=0x0fffffff; //256MB session.setProperty("maxFieldSize",Poco::Any(maxFldSize)); 二进制数据插入、读取方法: BLOB dat_((unsigned char*)buffer,length); std::vector te_bl; session<<"insert into blobtest values(?)" ,use(dat_),now; session<<"select * from blobtest",into(te_bl),now;
 
