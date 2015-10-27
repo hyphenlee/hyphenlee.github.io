@@ -40,6 +40,7 @@
 在知乎上看到一个问题问的是：哪些行为是浪费时间？
 看到其中一条回答：
 
+#+BEGIN_SRC
 我的愚见，是等。
 等长大，等放假，等老板同意，等对方喜欢自己，等条件成熟，等下一次机会，等更好的人出现，等公正到来，等待被救援，等某人回心转意，等一个不可能的奇迹。
 不等就是，活在当下。
@@ -47,6 +48,7 @@
 喜欢这件事情就去做，就算做得不好，也是开始。
 想要得到什么，就去试试看。等不到救援，试试去救援别人。
 全部不再等，全部今天眼前现在开始做。
+#+END_SRC
 
 回想一下发现自己真的是一直在等待，小的时候等待自己长大，穷的时候等待自己变得有钱，矮的时候等待自己长高，丑的时候想象着以后的自己或许会变帅，读书了急着放假，放假了却对开学望眼欲穿, 单身的时候总希望自己有另一半，看了《围城》说：“婚姻就像一座围城，城外的人想进来，城里的人想出去”，为什么要活得这么痛苦呢？为什么不颠倒一下：一个人的时候享受一个人的闲适与自由， 两个人的时候享受两个人依赖与眷恋。
 等，一直在等，等一切不如意的都消失，等一切都变好，希望时间过得快一点，希望明天快一点到来，也许这会让我们的生活多了些许的期待，代价却往往是以荒度当下的时间为代价。
@@ -135,31 +137,31 @@
 
 小说
 
-*** 活着
-*** 在细雨中呼喊
-*** 1984
-*** 令人战栗的格林童话
-*** 十八岁给我一个姑娘
-*** 围城
-*** 挪威的森林
-*** 白鹿原
-*** 爸爸，我们去哪儿？
-*** 鹿鼎记
-*** 一个陌生女人的来信
+- 活着
+- 在细雨中呼喊
+- 1984
+- 令人战栗的格林童话
+- 十八岁给我一个姑娘
+- 围城
+- 挪威的森林
+- 白鹿原
+- 爸爸，我们去哪儿？
+- 鹿鼎记
+- 一个陌生女人的来信
 心理学
 
-*** 正能量 : 坚持正能量，人生不畏惧
-*** 少有人走的路 : 心智成熟的旅程黄金时代
-*** 高效能人士的七个习惯
+- 正能量 : 坚持正能量，人生不畏惧
+- 少有人走的路 : 心智成熟的旅程黄金时代
+- 高效能人士的七个习惯
 技术
 
-*** C专家编程
-*** Digital Imaging and Communications in Medicine (DICOM)
+- C专家编程
+- Digital Imaging and Communications in Medicine (DICOM)
 其他
 
-*** 别跟我说你懂日本
-*** 当我谈跑步时，我谈些什么
-*** 坛经
+- 别跟我说你懂日本
+- 当我谈跑步时，我谈些什么
+- 坛经
 今年跑步变得更加认真了，在苏州的时候基本每天都会花一个小时跑5到10公里，下半年开始用Nike+计步，到现在总计也跑了460公里了，只是后面在上海每天下班都很迟，没办法好好跑步，最多只是上下班走走，以后生活稳定了要认真开始跑步了。
 ** if I die yound
 每天我都要坐一辆郊区往市区的车去上班，倘若某天在这车上，这辆不起眼的公交车上，在某个不起眼的地方，出了问题，汽车失控，结果是高速地撞上路旁的防护栏，继而飞下高架，车毁人亡，无论怎样，反正我死了，结果会怎样？
@@ -260,9 +262,21 @@ for (int i = 0; i < 10000; i++)
 #+END_SRC
 查询代码 ：
 
-以id作为检索条件： char *st = "select * from no_key_table where id=%d"; size_t st_len = strlen(st); char *query=new char[st_len + 1024+1]; MYSQL_RES *result = NULL; std::vector uid_list; for (int i = 0; i < 1000; i++) { int len = sprintf_s(query, st_len + 1024+1, st,i+5000); if ( mysql_query(mydata_, query)) { assert(false); } result = mysql_store_result(mydata_); MYSQL_ROW row = NULL; while((row = mysql_fetch_row(result))) { uid_list.push_back(row[1]); } } 以uid作为检索条件： char *st2 = "select * from not_key_tablewhere uid='%s'"; size_t st_lens = strlen(st2); char *querys=new char[st_lens + 1024+1]; MYSQL_RES *results = NULL; for (int i = 0; i < 1000; i++) { int len = sprintf_s(querys, st_lens + 1024+1, st2,uid_list[i].c_str()); if ( mysql_query(mydata_, querys)) {} results = mysql_store_result(mydata_); }
+以id作为检索条件：
+ char *st = "select * from no_key_table where id=%d"; size_t st_len = strlen(st); char *query=new char[st_len + 1024+1]; MYSQL_RES *result = NULL; std::vector uid_list; for (int i = 0; i < 1000; i++) { int len = sprintf_s(query, st_len + 1024+1, st,i+5000); if ( mysql_query(mydata_, query)) { assert(false); } result = mysql_store_result(mydata_); MYSQL_ROW row = NULL; while((row = mysql_fetch_row(result))) { uid_list.push_back(row[1]); } } 以uid作为检索条件： char *st2 = "select * from not_key_tablewhere uid='%s'"; size_t st_lens = strlen(st2); char *querys=new char[st_lens + 1024+1]; MYSQL_RES *results = NULL; for (int i = 0; i < 1000; i++) { int len = sprintf_s(querys, st_lens + 1024+1, st2,uid_list[i].c_str()); if ( mysql_query(mydata_, querys)) {} results = mysql_store_result(mydata_); }
 
-三个表的的测试代码基本相同，表名改一下就行，测试计时使用的是断点，在关键代码的开始和结尾设置断点，当代码运行到关键代码的开始初中断后，在vs2012的监视窗口处添加一个@clk的变量，并将值设为0，然后运行代码到第二个断点中断后，监视窗口就会显示运行这段代码所花的时钟周期。 测试结果： test speed of retrieve data from databse with or without primary key. 1. 10000 line data ** select * from table 1000 times by retrieve id; *** uid table without primary key 8,230,374 8,550,001 **** one time 9467 8528 *** test_id_key with int number as the primary key 184,933 171,449 **** one time 1085 1014 ** retrivev by uid *** uid table without primary key 15,997,671 16,019,505 *** test_uid_key with varchar(100) as the primary key 115,794 79,089 80,074
+三个表的的测试代码基本相同，表名改一下就行，测试计时使用的是断点，在关
+键代码的开始和结尾设置断点，当代码运行到关键代码的开始初中断后，在
+vs2012的监视窗口处添加一个@clk的变量，并将值设为0，然后运行代码到第二
+个断点中断后，监视窗口就会显示运行这段代码所花的时钟周期。 测试结果：
+
+test speed of retrieve data from databse with or without primary
+key. 1. 10000 line data 
+** select * from table 1000 times by retrieve id; 
+*** uid table without primary key 8,230,374 8,550,001
+**** one time 9467 8528 *** test_id_key with int number as the primary key 184,933 171,449 **** one time 1085 1014 ** retrivev by uid *** uid table without primary key 15,997,671 16,019,505
+*** test_uid_key with varchar(100) as the primary key 
+115,794 79,089 80,074
 
 |---------------+------+------+---|
 | million clock |   id |  uid |   |
@@ -282,10 +296,17 @@ for (int i = 0; i < 10000; i++)
 
 连接数据库本身没什么难度，按着poco c++官网的教程就能连上， 郁闷的是教程有一些错误，而且和代码版本对不上，我开始用1.4.6就发现好些错误，如插入数据时用按官网用 std::string aName("Peter"); ses << "INSERT INTO FORENAME VALUES(:name)", use(aName), now; 后面整了很长时间都不行,看了测试代码才知道应该用下面的方式: std::string aName("Peter"); ses << "INSERT INTO FORENAME VALUES(?)", use(aName), now; 再换到1.5.2版本时，发现use,now的命名空间都变了，由原来的Poco::Data,变成Poco::Data::Keywords, Poco/Data/common.h文件也消失了。 官网的教程与代码是有很多是不同步的，所以:
 
+#+BEGIN_SRC
 “RTFSC – Read The F**king Source Code ☺!” ––Linus Benedict Torvalds
-使用自定义类型插入时，insert语句中的VALUES(?,?,?),问号个数要与模板中的数据项目个数一致， 自定义数据类型的数据插入次序也要和数据库中表的列的次序相对应。 odbc的配置对于新手也是个问题,windows(windows8 64 位)的32位odbc配置管理器在这里:
+#+END_SRC
+使用自定义类型插入时，insert语句中的VALUES(?,?,?),问号个数要与模板中的
+数据项目个数一致， 自定义数据类型的数据插入次序也要和数据库中表的列的
+次序相对应。 odbc的配置对于新手也是个问题,windows(windows8 64 位)的32
+位odbc配置管理器在这里:
 
+#+BEGIN_SRC
 C:\Windows\SysWOW64\odbcad32.exe
+#+END_SRC
 32位和64位是有区别的，32位只能用32位的驱动，mysql的odbc驱动也要额外安装 连接基本就是这些问题了
 
 二进制数据插入、读取
