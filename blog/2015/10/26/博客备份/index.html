@@ -55,7 +55,8 @@
 <li><a href="#sec-2-2">select * from table 1000 times by retrieve id;</a>
 <ul>
 <li><a href="#sec-2-2-1">uid table without primary key 8,230,374 8,550,001</a></li>
-<li><a href="#sec-2-2-2">test_uid_key with varchar(100) as the primary key</a></li>
+<li><a href="#sec-2-2-2">test_id_key with int number as the primary key 184,933 171,449</a></li>
+<li><a href="#sec-2-2-3">test_uid_key with varchar(100) as the primary key 115,794 79,089 80,074</a></li>
 </ul>
 </li>
 <li><a href="#sec-2-3">数据库连接</a></li>
@@ -73,18 +74,17 @@
 </div><div id="outline-container-sec-1-1" class="outline-3">
 <h3 id="sec-1-1">关于读书</h3>
 <div class="outline-text-3" id="text-1-1">
-<p class="verse">
-世上几百年旧家无非积德，天下第一件好事还是读书。<br  />
+<p>
+世上几百年旧家无非积德，天下第一件好事还是读书。
 </p>
 
-<div class="center">
 <p>
 人说读书无用，我说读书本身是无用，因为只是读书或者说泛泛的读是不够的，只有精读细读，更重要的是读了之后还要应用在具体的生活中，才能让它有用，所以读书本身有无用之用，无用而大用，无用而无所不用。
 而书本身又分很多种，一本书是否有用，对每个人都不一样，我写这篇文章并不
 是为了告诉别人什么书好，什么书不好，只是为了记录一下自己的阅读状态，倘
 若有人认同，也不枉我码了半天字。
 </p>
-</div>
+
 
 <p>
 对我来说书分下面几种：
@@ -129,16 +129,14 @@
 <div id="outline-container-sec-1-3" class="outline-3">
 <h3 id="sec-1-3">关于等待</h3>
 <div class="outline-text-3" id="text-1-3">
-<p class="verse">
-在知乎上看到一个问题问的是：哪些行为是浪费时间？<br  />
-</p>
 <p>
+在知乎上看到一个问题问的是：哪些行为是浪费时间？
 看到其中一条回答：
 </p>
 
-<blockquote>
-<p>
-"我的愚见，是等。 
+<div class="org-src-container">
+
+<pre class="src src-c">"我的愚见，是等。 
 等长大，等放假，等老板同意，等对方喜欢自己，等条件成熟，等下一次机会，
 等更好的人出现，等公正到来，等待被救援，等某人回心转意，等一个不可能的
 奇迹。
@@ -147,12 +145,10 @@
 么办。
 喜欢这件事情就去做，就算做得不好，也是开始。
 想要得到什么，就去试试看。等不到救援，试试去救援别人。
-</p>
 
-<p>
 全部不再等，全部今天眼前现在开始做。"
-</p>
-</blockquote>
+</pre>
+</div>
 
 <p>
 回想一下发现自己真的是一直在等待，小的时候等待自己长大，穷的时候等待自己变得有钱，矮的时候等待自己长高，丑的时候想象着以后的自己或许会变帅，读书了急着放假，放假了却对开学望眼欲穿, 单身的时候总希望自己有另一半，看了《围城》说：“婚姻就像一座围城，城外的人想进来，城里的人想出去”，为什么要活得这么痛苦呢？为什么不颠倒一下：一个人的时候享受一个人的闲适与自由， 两个人的时候享受两个人依赖与眷恋。
@@ -173,9 +169,7 @@
 
 <p>
 下面是我自己的翻译：
-</p>
-
-<p>
+#+begin_src c
 你在你回家的路上死去了。
 是一场车祸，没有什么特别值得说的，但是你留下了你的妻子和两个孩子，你死的很干脆，没有多大痛苦。急救人员尽了全力也没能挽回你的生命，你的身体撞的粉碎（相信我，这样反而更好）。
 这时候你见到了我。
@@ -241,6 +235,7 @@
 “那这整个宇宙，”你说道，“只是。。。”
 “一个蛋”，我回答道，“现在是时候让你去经历下一个生命了”。
 然后我送你去你该去的地方了。
+#+end_src c
 </p>
 </div>
 </div>
@@ -436,29 +431,16 @@ nike+，ios和android 都有的免费app，无需额外传感器，可以用机�
 <div id="outline-container-sec-1-8" class="outline-3">
 <h3 id="sec-1-8">poem</h3>
 <div class="outline-text-3" id="text-1-8">
-<p>
-时间过得飞快，
-</p>
+<div class="org-src-container">
 
-<p>
+<pre class="src src-c">时间过得飞快，
 快的让我害怕，
-</p>
-
-<p>
 我怕一转眼就老了，
-</p>
-
-<p>
 却仍旧一事无成；
-</p>
-
-<p>
 我怕一转眼就死了，
-</p>
-
-<p>
 却还是孤独一生；
-</p>
+</pre>
+</div>
 </div>
 </div>
 
@@ -540,7 +522,38 @@ for (int i = 0; i &lt; 10000; i++)
 </p>
 <div class="org-src-container">
 
-<pre class="src src-c"> char *st = "select * from no_key_table where id=%d"; size_t st_len = strlen(st); char *query=new char[st_len + 1024+1]; MYSQL_RES *result = NULL; std::vector uid_list; for (int i = 0; i &lt; 1000; i++) { int len = sprintf_s(query, st_len + 1024+1, st,i+5000); if ( mysql_query(mydata_, query)) { assert(false); } result = mysql_store_result(mydata_); MYSQL_ROW row = NULL; while((row = mysql_fetch_row(result))) { uid_list.push_back(row[1]); } } 以uid作为检索条件： char *st2 = "select * from not_key_tablewhere uid='%s'"; size_t st_lens = strlen(st2); char *querys=new char[st_lens + 1024+1]; MYSQL_RES *results = NULL; for (int i = 0; i &lt; 1000; i++) { int len = sprintf_s(querys, st_lens + 1024+1, st2,uid_list[i].c_str()); if ( mysql_query(mydata_, querys)) {} results = mysql_store_result(mydata_); }
+<pre class="src src-cpp">char *st = "select * from no_key_table where id=%d";
+size_t st_len = strlen(st);
+char *query=new char[st_len + 1024+1];
+MYSQL_RES *result = NULL;
+std::vector uid_list;
+for (int i = 0; i &lt; 1000; i++) { 
+  int len = sprintf_s(query, st_len + 1024+1, st,i+5000);
+  if ( mysql_query(mydata_, query)) 
+    { assert(false); } 
+  result = mysql_store_result(mydata_); 
+  MYSQL_ROW row = NULL;
+  while((row = mysql_fetch_row(result))) {
+    uid_list.push_back(row[1]);
+  }
+ }
+</pre>
+</div>
+<p>
+以uid作为检索条件： 
+</p>
+<div class="org-src-container">
+
+<pre class="src src-cpp">char *st2 = "select * from not_key_tablewhere uid='%s'";
+size_t st_lens = strlen(st2);
+char *querys=new char[st_lens + 1024+1];
+MYSQL_RES *results = NULL;
+for (int i = 0; i &lt; 1000; i++) {
+  int len = sprintf_s(querys, st_lens + 1024+1, st2,uid_list[i].c_str());
+  if ( mysql_query(mydata_, querys)) 
+    {}
+  results = mysql_store_result(mydata_);
+ }
 </pre>
 </div>
 <p>
@@ -563,16 +576,18 @@ key. 1. 10000 line data
 </div><div id="outline-container-sec-2-2-1" class="outline-4">
 <h4 id="sec-2-2-1">uid table without primary key 8,230,374 8,550,001</h4>
 <div class="outline-text-4" id="text-2-2-1">
-</div><ul class="org-ul"><li>one time 9467 8528 <b>*</b> test_id_key with int number as the primary key 184,933 171,449 <b>**</b> one time 1085 1014 <b>* retrivev by uid **</b> uid table without primary key 15,997,671 16,019,505<br  /></li></ul>
+</div><ul class="org-ul"><li>one time 9467 8528<br  /></li></ul>
 </div>
 
 <div id="outline-container-sec-2-2-2" class="outline-4">
-<h4 id="sec-2-2-2">test_uid_key with varchar(100) as the primary key</h4>
+<h4 id="sec-2-2-2">test_id_key with int number as the primary key 184,933 171,449</h4>
 <div class="outline-text-4" id="text-2-2-2">
-<p>
-115,794 79,089 80,074
-</p>
+</div><ul class="org-ul"><li>one time 1085 1014 <b>* retrivev by uid **</b> uid table without primary key 15,997,671 16,019,505<br  /></li></ul>
+</div>
 
+<div id="outline-container-sec-2-2-3" class="outline-4">
+<h4 id="sec-2-2-3">test_uid_key with varchar(100) as the primary key 115,794 79,089 80,074</h4>
+<div class="outline-text-4" id="text-2-2-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
