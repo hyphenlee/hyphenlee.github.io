@@ -11,16 +11,14 @@
 这是之前的博客的备份
 * 感想
 ** 关于读书
-#+BEGIN_VERSE
-世上几百年旧家无非积德，天下第一件好事还是读书。
-#+END_VERSE
 
-#+BEGIN_CENTER
+世上几百年旧家无非积德，天下第一件好事还是读书。
+
 人说读书无用，我说读书本身是无用，因为只是读书或者说泛泛的读是不够的，只有精读细读，更重要的是读了之后还要应用在具体的生活中，才能让它有用，所以读书本身有无用之用，无用而大用，无用而无所不用。
 而书本身又分很多种，一本书是否有用，对每个人都不一样，我写这篇文章并不
 是为了告诉别人什么书好，什么书不好，只是为了记录一下自己的阅读状态，倘
 若有人认同，也不枉我码了半天字。
-#+END_CENTER
+
 
 对我来说书分下面几种：
 
@@ -44,12 +42,10 @@
 的单身人日夜向往,梦寐以求的温暖.
 ** 关于等待
 
-#+BEGIN_VERSE
 在知乎上看到一个问题问的是：哪些行为是浪费时间？
-#+END_VERSE
 看到其中一条回答：
 
-#+BEGIN_QUOTE
+#+BEGIN_SRC c
 "我的愚见，是等。 
 等长大，等放假，等老板同意，等对方喜欢自己，等条件成熟，等下一次机会，
 等更好的人出现，等公正到来，等待被救援，等某人回心转意，等一个不可能的
@@ -61,7 +57,7 @@
 想要得到什么，就去试试看。等不到救援，试试去救援别人。
 
 全部不再等，全部今天眼前现在开始做。"
-#+END_QUOTE
+#+END_SRC
 
 回想一下发现自己真的是一直在等待，小的时候等待自己长大，穷的时候等待自己变得有钱，矮的时候等待自己长高，丑的时候想象着以后的自己或许会变帅，读书了急着放假，放假了却对开学望眼欲穿, 单身的时候总希望自己有另一半，看了《围城》说：“婚姻就像一座围城，城外的人想进来，城里的人想出去”，为什么要活得这么痛苦呢？为什么不颠倒一下：一个人的时候享受一个人的闲适与自由， 两个人的时候享受两个人依赖与眷恋。
 等，一直在等，等一切不如意的都消失，等一切都变好，希望时间过得快一点，希望明天快一点到来，也许这会让我们的生活多了些许的期待，代价却往往是以荒度当下的时间为代价。
@@ -72,7 +68,7 @@
 原文链接：[[http://www.galactanet.com/oneoff/theegg.html][The Egg]]
 
 下面是我自己的翻译：
-
+#+begin_src c
 你在你回家的路上死去了。
 是一场车祸，没有什么特别值得说的，但是你留下了你的妻子和两个孩子，你死的很干脆，没有多大痛苦。急救人员尽了全力也没能挽回你的生命，你的身体撞的粉碎（相信我，这样反而更好）。
 这时候你见到了我。
@@ -138,6 +134,7 @@
 “那这整个宇宙，”你说道，“只是。。。”
 “一个蛋”，我回答道，“现在是时候让你去经历下一个生命了”。
 然后我送你去你该去的地方了。
+#+end_src c
 
 ** 2013 总结
 2013年就要过去了，boss说要我做总结，我讨厌企业的那种功利性的总结，我厌烦了过于具体且抱着侥幸心里的职业规划，但对于我个人来说还是非常有必要做一次总结，只为了这一年的变动。 这一年我离开了学校，离开了老师、同学，离开了自己所熟悉的一切，走到了一个自己完全陌生的地方，开始了自己新的一段生活，得到了什么，失去了什么，又有谁能够算的清。 这一年我理所当然的考研失败了，又没有勇气，也没有能力，开始新的征程，现在的我也开始犹豫是否还会考，这始终还是之后的职业发展才能确定的。 但这一年我至少慢慢的找回了自己方向，我开始更加认真的跑步，开始试着多读一些有深度的书籍，确定了自己生活中最重要的两件事——运动和阅读。 年初的时候一直处于空虚的状态，考研没考上的人生是相当惨淡的，每天只好玩玩游戏，学学吉他，打打网球。之后实在玩不住了，就急于找一份工作，可是那时候不是应聘季，基本没有公司在招人，找了几家公司做了几套试题，专业也不对口，实在提不起兴趣，那时候刚考完研，语言的具体细节都忘了，连double是几个字节都忘了，不过这种东西补起来也快，自己也在边找工作边看书补习，最后就遇到了自己现在工作的这家公司，面试的时候大概是3月份吧，当时公司就3个人，个个似乎都有比我厉害的精力，要做的工作也专业对口，工资还算正常，就答应加入了。
@@ -225,17 +222,14 @@
 豆瓣的跑步小组 在这可以找到各种问题的回答，例如跑步的装备，可以认识各种跑友
 nike+，ios和android 都有的免费app，无需额外传感器，可以用机器自带的gps，没有gps的还可以用重力感应器计步，语音提醒很方便，挑战模式也挺好玩。 顺带写下我的nike+帐号，可以加我好友 >lhfcjhyy@gmail.com
 ** poem
+#+begin_src c
 时间过得飞快，
-
 快的让我害怕，
-
 我怕一转眼就老了，
-
 却仍旧一事无成；
-
 我怕一转眼就死了，
-
 却还是孤独一生；
+#+end_src 
 ** why blog
 为什么会有这个博客呢？
 
@@ -276,8 +270,35 @@ for (int i = 0; i < 10000; i++)
 查询代码 ：
 
 以id作为检索条件：
-#+begin_src c
- char *st = "select * from no_key_table where id=%d"; size_t st_len = strlen(st); char *query=new char[st_len + 1024+1]; MYSQL_RES *result = NULL; std::vector uid_list; for (int i = 0; i < 1000; i++) { int len = sprintf_s(query, st_len + 1024+1, st,i+5000); if ( mysql_query(mydata_, query)) { assert(false); } result = mysql_store_result(mydata_); MYSQL_ROW row = NULL; while((row = mysql_fetch_row(result))) { uid_list.push_back(row[1]); } } 以uid作为检索条件： char *st2 = "select * from not_key_tablewhere uid='%s'"; size_t st_lens = strlen(st2); char *querys=new char[st_lens + 1024+1]; MYSQL_RES *results = NULL; for (int i = 0; i < 1000; i++) { int len = sprintf_s(querys, st_lens + 1024+1, st2,uid_list[i].c_str()); if ( mysql_query(mydata_, querys)) {} results = mysql_store_result(mydata_); }
+#+begin_src cpp
+char *st = "select * from no_key_table where id=%d";
+size_t st_len = strlen(st);
+char *query=new char[st_len + 1024+1];
+MYSQL_RES *result = NULL;
+std::vector uid_list;
+for (int i = 0; i < 1000; i++) { 
+  int len = sprintf_s(query, st_len + 1024+1, st,i+5000);
+  if ( mysql_query(mydata_, query)) 
+    { assert(false); } 
+  result = mysql_store_result(mydata_); 
+  MYSQL_ROW row = NULL;
+  while((row = mysql_fetch_row(result))) {
+    uid_list.push_back(row[1]);
+  }
+ }
+#+end_src
+ 以uid作为检索条件： 
+#+begin_src cpp
+char *st2 = "select * from not_key_tablewhere uid='%s'";
+size_t st_lens = strlen(st2);
+char *querys=new char[st_lens + 1024+1];
+MYSQL_RES *results = NULL;
+for (int i = 0; i < 1000; i++) {
+  int len = sprintf_s(querys, st_lens + 1024+1, st2,uid_list[i].c_str());
+  if ( mysql_query(mydata_, querys)) 
+    {}
+  results = mysql_store_result(mydata_);
+ }
 #+end_src 
 三个表的的测试代码基本相同，表名改一下就行，测试计时使用的是断点，在关
 键代码的开始和结尾设置断点，当代码运行到关键代码的开始初中断后，在
@@ -288,9 +309,10 @@ test speed of retrieve data from databse with or without primary
 key. 1. 10000 line data 
 ** select * from table 1000 times by retrieve id; 
 *** uid table without primary key 8,230,374 8,550,001
-**** one time 9467 8528 *** test_id_key with int number as the primary key 184,933 171,449 **** one time 1085 1014 ** retrivev by uid *** uid table without primary key 15,997,671 16,019,505
-*** test_uid_key with varchar(100) as the primary key 
-115,794 79,089 80,074
+**** one time 9467 8528
+*** test_id_key with int number as the primary key 184,933 171,449
+**** one time 1085 1014 ** retrivev by uid *** uid table without primary key 15,997,671 16,019,505
+*** test_uid_key with varchar(100) as the primary key 115,794 79,089 80,074
 
 |---------------+------+------+---|
 | million clock |   id |  uid |   |
