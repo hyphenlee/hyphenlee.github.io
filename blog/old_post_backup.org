@@ -310,12 +310,17 @@ vs2012的监视窗口处添加一个@clk的变量，并将值设为0，然后运
 
 test speed of retrieve data from databse with or without primary
 key. 1. 10000 line data 
-** select * from table 1000 times by retrieve id; 
-*** uid table without primary key 8,230,374 8,550,001
-**** one time 9467 8528
-*** test_id_key with int number as the primary key 184,933 171,449
-**** one time 1085 1014 ** retrivev by uid *** uid table without primary key 15,997,671 16,019,505
-*** test_uid_key with varchar(100) as the primary key 115,794 79,089 80,074
+ select * from table 1000 times by retrieve id; 
+ uid table without primary key 8,230,374 8,550,001
+
+ one time 9467 8528
+
+ test_id_key with int number as the primary key 184,933 171,449
+
+ one time 1085 1014 ** retrivev by uid *** uid table without primary
+ key 15,997,671 16,019,505
+
+ test_uid_key with varchar(100) as the primary key 115,794 79,089 80,074
 
 |---------------+------+------+---|
 | million clock |   id |  uid |   |
@@ -357,3 +362,4 @@ max_allowed_packet=256M
 
  Session session("ODBC",DSN); std::size_t maxFldSize=0x0fffffff; //256MB session.setProperty("maxFieldSize",Poco::Any(maxFldSize)); 二进制数据插入、读取方法: BLOB dat_((unsigned char*)buffer,length); std::vector te_bl; session<<"insert into blobtest values(?)" ,use(dat_),now; session<<"select * from blobtest",into(te_bl),now;
 
+ 
