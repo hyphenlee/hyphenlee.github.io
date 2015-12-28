@@ -1,0 +1,15 @@
+#+TITLE:       git笔记
+#+AUTHOR:      hyphen
+#+EMAIL:       lhfcjhyy@gmail.com
+#+DATE:        2015-12-28 Mon
+#+URI:         /blog/%y/%m/%d/git笔记
+#+KEYWORDS:    git
+#+TAGS:        tech
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: git学习笔记
+
+* git 学习
+** git from bottom up
+[[file:git.from.bottom.up.pdf][pdf]]
+
