@@ -4,10 +4,17 @@
     <title>Let it be</title>
     <link>https://hyphenlee.github.io</link>
     <description>Don&#39;t leave this world without anything left.</description>
-    <pubDate>Mon, 28 Dec 2015 14:08:03 CST</pubDate>
-    <lastBuildDate>Mon, 28 Dec 2015 14:08:03 CST</lastBuildDate>
+    <pubDate>Wed, 24 Feb 2016 16:59:53 CST</pubDate>
+    <lastBuildDate>Wed, 24 Feb 2016 16:59:53 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>summary of 2015</title>
+      <link>https://hyphenlee.github.io/blog/2016/02/08/summary-of-2015</link>
+      <description><![CDATA[summary of 2015]]></description>
+      <pubDate>2016-02-24</pubDate>
+      <guid>https://hyphenlee.github.io/blog/2016/02/08/summary-of-2015</guid>
+    </item>
     <item>
       <title>git笔记</title>
       <link>https://hyphenlee.github.io/blog/2015/12/28/git笔记</link>
