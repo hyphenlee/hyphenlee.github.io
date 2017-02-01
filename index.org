@@ -27,7 +27,10 @@
 - State "WORKING"    from "WORKING"    [2015-06-30 Tue 23:04]
 - State "WORKING"    from "TODO"       [2015-06-30 Tue 22:59]
 - State "TODO"       from ""           [2015-06-22 Mon 22:21]
-** WORKING 哈利波特四
+** DONE 哈利波特四
+- State "DONE"       from "WORKING"    [2017-02-01 Wed 17:33] \\
+  五月份就完成了，但是一直没有更新博客
 - State "WORKING"    from "WORKING"    [2015-10-26 Mon 16:53]
 - State "TODO"       from ""           [2015-05-03 Sun 10:13]
-
+** TODO 哈利波特五
+- State "TODO"       from              [2017-02-01 Wed 17:34]

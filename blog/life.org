@@ -2,7 +2,7 @@
 #+AUTHOR:      hyphen
 #+EMAIL:       lhfcjhyy@gmail.com
 #+DATE:        2015-02-10 Tue
-#+URI:         /blog/%y/%m/%d/博客终结
+#+URI:         /blog/%y/%m/%d/博客总结
 #+KEYWORDS:    life
 #+TAGS:        life
 #+LANGUAGE:    en
