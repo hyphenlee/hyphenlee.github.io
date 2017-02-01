@@ -2,7 +2,7 @@
 #+AUTHOR:      李海峰
 #+EMAIL:       lihaifeng@hyphenlee.local
 #+DATE:        2017-02-01 Wed
-#+URI:         /blog/%y/%m/%d/2016总结
+#+URI:         /blog/%y/%m/%d/2016_summary
 #+KEYWORDS:    life
 #+TAGS:        life
 #+LANGUAGE:    en
