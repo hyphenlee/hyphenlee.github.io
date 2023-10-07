@@ -36,17 +36,17 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org656fce1">first things first</a></li>
-<li><a href="#orgf3374b3">缘起</a></li>
-<li><a href="#orgdec7f6d">下面说说两个插件的安装：</a>
+<li><a href="#org0ec4ac7">first things first</a></li>
+<li><a href="#org3ea18e9">缘起</a></li>
+<li><a href="#orgb18555d">下面说说两个插件的安装：</a>
 <ul>
-<li><a href="#orgc590ad3">安装llvm:</a></li>
-<li><a href="#org2f3499b">安装：</a></li>
-<li><a href="#org53852e2">下面是自动补全的：</a></li>
-<li><a href="#org69b09e2">关于我的配置文件：</a>
+<li><a href="#orgaec5573">安装llvm:</a></li>
+<li><a href="#org919cf3e">安装：</a></li>
+<li><a href="#org91f33f9">下面是自动补全的：</a></li>
+<li><a href="#orgdf01507">关于我的配置文件：</a>
 <ul>
-<li><a href="#org5a6b111">.emacs.d/plugins 存放插件的位置。</a></li>
-<li><a href="#org186566e">.emacs.d/wttr-config是主要配置文件的位置。</a></li>
+<li><a href="#org37f5f82">.emacs.d/plugins 存放插件的位置。</a></li>
+<li><a href="#orge8c4790">.emacs.d/wttr-config是主要配置文件的位置。</a></li>
 </ul>
 </li>
 </ul>
@@ -54,9 +54,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org656fce1" class="outline-2">
-<h2 id="org656fce1">first things first</h2>
-<div class="outline-text-2" id="text-org656fce1">
+<div id="outline-container-org0ec4ac7" class="outline-2">
+<h2 id="org0ec4ac7">first things first</h2>
+<div class="outline-text-2" id="text-org0ec4ac7">
 <p>
 这是我的emacs配置
 <a href="https://github.com/hyphenlee/emacs.d">emacs configuration</a>
@@ -64,9 +64,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgf3374b3" class="outline-2">
-<h2 id="orgf3374b3">缘起</h2>
-<div class="outline-text-2" id="text-orgf3374b3">
+<div id="outline-container-org3ea18e9" class="outline-2">
+<h2 id="org3ea18e9">缘起</h2>
+<div class="outline-text-2" id="text-org3ea18e9">
 <p>
 用了emacs已有两年多，我工作的环境是vs2012,使用了vsvim和vassistx,算是比较完美是使用方式，集成了IDE和编辑器各自的优势， 
 </p>
@@ -86,9 +86,9 @@ emacs相对于IDE最大的缺点是项目管理和基于语义的文件跳转和
 </div>
 
 
-<div id="outline-container-orgdec7f6d" class="outline-2">
-<h2 id="orgdec7f6d">下面说说两个插件的安装：</h2>
-<div class="outline-text-2" id="text-orgdec7f6d">
+<div id="outline-container-orgb18555d" class="outline-2">
+<h2 id="orgb18555d">下面说说两个插件的安装：</h2>
+<div class="outline-text-2" id="text-orgb18555d">
 <p>
 rtags:<a href="https://github.com/Andersbakken/rtags">https://github.com/Andersbakken/rtags</a>
 </p>
@@ -98,9 +98,9 @@ git clone  --recursive <a href="https://github.com/Andersbakken/rtags.git">https
 </p>
 </div>
 
-<div id="outline-container-orgc590ad3" class="outline-3">
-<h3 id="orgc590ad3">安装llvm:</h3>
-<div class="outline-text-3" id="text-orgc590ad3">
+<div id="outline-container-orgaec5573" class="outline-3">
+<h3 id="orgaec5573">安装llvm:</h3>
+<div class="outline-text-3" id="text-orgaec5573">
 <p>
 brew search llvm
 </p>
@@ -112,9 +112,9 @@ brew search llvm
 </div>
 
 
-<div id="outline-container-org2f3499b" class="outline-3">
-<h3 id="org2f3499b">安装：</h3>
-<div class="outline-text-3" id="text-org2f3499b">
+<div id="outline-container-org919cf3e" class="outline-3">
+<h3 id="org919cf3e">安装：</h3>
+<div class="outline-text-3" id="text-org919cf3e">
 <p>
 brew install llvm35 --with-clang --with-libcxx --rtti
 </p>
@@ -184,9 +184,9 @@ M-g o 在cpp/h 中切换。
 </p>
 </div>
 </div>
-<div id="outline-container-org53852e2" class="outline-3">
-<h3 id="org53852e2">下面是自动补全的：</h3>
-<div class="outline-text-3" id="text-org53852e2">
+<div id="outline-container-org91f33f9" class="outline-3">
+<h3 id="org91f33f9">下面是自动补全的：</h3>
+<div class="outline-text-3" id="text-org91f33f9">
 <p>
 emacs-clang-complete-async:<a href="https://github.com/Golevka/emacs-clang-complete-async">https://github.com/Golevka/emacs-clang-complete-async</a>
 </p>
@@ -228,26 +228,26 @@ $(LINK.c) $^ $(LDLIBS)后 加了 -rpath /usr/local/Cellar/llvm35/3.5.0/lib/llvm-
 </div>
 </div>
 
-<div id="outline-container-org69b09e2" class="outline-3">
-<h3 id="org69b09e2">关于我的配置文件：</h3>
-<div class="outline-text-3" id="text-org69b09e2">
+<div id="outline-container-orgdf01507" class="outline-3">
+<h3 id="orgdf01507">关于我的配置文件：</h3>
+<div class="outline-text-3" id="text-orgdf01507">
 <p>
 我用过很多人的配置文件，现在的这个版本也是基于他人的，配置中的很多wttr/开头的函数都是对方写的，结构是我看过的配置中相对较清晰的，所以一直在用。
 配置文件的结构：
 </p>
 </div>
-<div id="outline-container-org5a6b111" class="outline-4">
-<h4 id="org5a6b111">.emacs.d/plugins 存放插件的位置。</h4>
+<div id="outline-container-org37f5f82" class="outline-4">
+<h4 id="org37f5f82">.emacs.d/plugins 存放插件的位置。</h4>
 </div>
-<div id="outline-container-org186566e" class="outline-4">
-<h4 id="org186566e">.emacs.d/wttr-config是主要配置文件的位置。</h4>
-<div class="outline-text-4" id="text-org186566e">
+<div id="outline-container-orge8c4790" class="outline-4">
+<h4 id="orge8c4790">.emacs.d/wttr-config是主要配置文件的位置。</h4>
+<div class="outline-text-4" id="text-orge8c4790">
 </div>
 <ul class="org-ul">
-<li><a id="org5ba8fdc"></a>wttr-basic.el是一些基本设置，包括emacs的shell中独立的path的设置，也就是exec-path，还有C-c C-y 复制一行，C-M-\\缩进整个buffer。<br /></li>
-<li><a id="org6134c81"></a>wttr-font.el是字体，wttr-color-theme.el设置主题背景，wttr-key.el是按键设置，非插件相关的按键绑定都在这里，wttr-mode-line.el就是emacs最下面的那条信息栏的显示，这个文件写的很好,包括了nyan-mode彩虹条，文件编码，等都很实用。<br /></li>
-<li><a id="org8f83540"></a>wttr-utils.el是作者自己写的一些函数，包括系统类型判断，加载路径到load-path,都很实用。<br /></li>
-<li><a id="org25ad0ba"></a>wttr-modes.el是插件加载选择的文件，原始版本是记载.emacs.d/wttr-config/modes/文件夹下按插件的名称创建响应的配置文件，然后在wttr-modes.el加载扫描到的modes/中所有配置文件，我把它改成了根据不同的系统加载我需要的插件。<br /></li>
+<li><a id="org8ca937e"></a>wttr-basic.el是一些基本设置，包括emacs的shell中独立的path的设置，也就是exec-path，还有C-c C-y 复制一行，C-M-\\缩进整个buffer。<br /></li>
+<li><a id="org1b36450"></a>wttr-font.el是字体，wttr-color-theme.el设置主题背景，wttr-key.el是按键设置，非插件相关的按键绑定都在这里，wttr-mode-line.el就是emacs最下面的那条信息栏的显示，这个文件写的很好,包括了nyan-mode彩虹条，文件编码，等都很实用。<br /></li>
+<li><a id="org84c366a"></a>wttr-utils.el是作者自己写的一些函数，包括系统类型判断，加载路径到load-path,都很实用。<br /></li>
+<li><a id="org19f8706"></a>wttr-modes.el是插件加载选择的文件，原始版本是记载.emacs.d/wttr-config/modes/文件夹下按插件的名称创建响应的配置文件，然后在wttr-modes.el加载扫描到的modes/中所有配置文件，我把它改成了根据不同的系统加载我需要的插件。<br /></li>
 </ul>
 </div>
 </div>
